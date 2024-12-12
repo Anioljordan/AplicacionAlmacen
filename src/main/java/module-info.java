@@ -13,5 +13,5 @@ module cat.copernic.presentacio {
     opens cat.copernic.dades to javafx.base;
     opens cat.copernic.presentacio to javafx.fxml;
     exports cat.copernic.presentacio;
-     // Reemplaza "tu.modulo" por el nombre de tu módulo
+     // Reemplaza "tu.modulo" por el nombre de tu módulo.
 }
