@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" minHeight="0.0" prefHeight="970.0" prefWidth="1910.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.PrincipalViewController">
+    <children>
+        <Pane prefHeight="835.0" prefWidth="1910.0">
+            <children>
+                <!-- Botó logOut a la part superior dreta -->
+                <Button fx:id="logOutButton" layoutX="63.0" layoutY="42.0" onAction="#goToLogin" prefHeight="80.0" prefWidth="200.0" text="Log Out">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+                <Text fx:id="titulo" layoutX="732.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="Menú Principal" wrappingWidth="524.025390625">
+                    <font>
+                        <Font size="69.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="imageLogo" fitHeight="424.0" fitWidth="1060.0" layoutX="458.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </Pane>
+        <HBox alignment="CENTER" layoutX="50.0" layoutY="460.0" prefHeight="112.0" prefWidth="940.0" spacing="20"> <!-- Afegeix layoutX i layoutY per ajustar la posició -->
+            <children>
+                <Button onAction="#handleObrirMagatzem" prefHeight="112.0" prefWidth="234.0" text="Magatzem">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+                <Button onAction="#goToFamilia" prefHeight="112.0" prefWidth="234.0" text="Famílies">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+                <Button onAction="#goToReferencia" prefHeight="112.0" prefWidth="234.0" text="Referències">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+                <Button onAction="#goToProveidor" prefHeight="112.0" prefWidth="234.0" text="Proveïdors">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+            </children>
+         <VBox.margin>
+            <Insets bottom="450.0" />
+         </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

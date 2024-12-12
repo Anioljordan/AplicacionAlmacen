@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="970.0" prefWidth="1910.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.ProveidorViewController">
+    <children>
+        <Pane prefHeight="132.0" prefWidth="1720.0">
+            <children>
+                <Label layoutX="761.0" layoutY="13.0" prefHeight="104.0" prefWidth="454.0" styleClass="segundotitulo" text="Proveïdors">
+                    <font>
+                        <Font size="71.0" />
+                    </font>
+                </Label>
+                <Button layoutX="52.0" layoutY="36.0" onAction="#goToPrincipal" prefHeight="71.0" prefWidth="285.0" text="Menú Principal">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane prefHeight="780.0" prefWidth="1720.0">
+            <children>
+                <ScrollPane fitToWidth="true" layoutX="190.0" layoutY="120.0" prefHeight="540.0" prefWidth="1530.0">
+                    <content>
+                        <TableView fx:id="tableProveidor" prefHeight="536.0" prefWidth="1525.0">
+                            <columns>
+                                <TableColumn fx:id="colId" prefWidth="110.0" text="ID" />
+                                <TableColumn fx:id="colNom" prefWidth="300.0" text="Nom" />
+                                <TableColumn fx:id="colCif" prefWidth="300.0" text="CIF" />
+                                <TableColumn fx:id="colEstat" prefWidth="200.0" text="Estado" />
+                                <TableColumn fx:id="colMotiu" prefWidth="400.0" text="Motiu" />
+                                <TableColumn fx:id="colTelefon" prefWidth="290.0" text="Telefon" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </ScrollPane>
+                <HBox layoutX="2.0" layoutY="703.0" prefHeight="100.0" prefWidth="1906.0" spacing="30.0">
+                    <children>
+                        <Button onAction="#buscarProveidor" prefHeight="70.0" prefWidth="200.0" text="Buscar ">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" right="80.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnModificar" onAction="#editarProveidor" prefHeight="70.0" prefWidth="200.0" text="Editar ">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="80.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnAlta" onAction="#goToAltaProveidorView" prefHeight="70.0" prefWidth="200.0" text="Alta ">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="80.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnBaixa" onAction="#eliminarProveidor" prefHeight="70.0" prefWidth="200.0" text="Eliminar">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="80.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnImport" onAction="#importarcsv" prefHeight="70.0" prefWidth="200.0" text="Importar">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="80.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnExport" onAction="#exportarcsv" prefHeight="70.0" prefWidth="200.0" text="Exportar">
+                            <font>
+                                <Font size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </children>
+</VBox>

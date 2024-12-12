@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="cat.copernic.presentacio.AltaReferenciaViewController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20px;" text="Alta Referència" />
+        <Label layoutX="14.0" layoutY="50.0" text="ID Referència:" />
+        <TextField fx:id="idReferenciaTextField" layoutX="130.0" layoutY="50.0" />
+        
+        <Label layoutX="14.0" layoutY="90.0" text="Nom:" />
+        <TextField fx:id="nomTextField" layoutX="130.0" layoutY="90.0" />
+        
+        <Label layoutX="14.0" layoutY="130.0" text="UoM:" />
+        <TextField fx:id="UomTextField" layoutX="130.0" layoutY="130.0" />
+        
+        <Label layoutX="14.0" layoutY="170.0" text="Quantitat:" />
+        <TextField fx:id="QuantitatTextField" layoutX="130.0" layoutY="170.0" />
+        
+        <Label layoutX="14.0" layoutY="210.0" text="Familia:" />
+        <ComboBox fx:id="familiaComboBox" layoutX="130.0" layoutY="210.0" />
+        
+        <Label layoutX="14.0" layoutY="250.0" text="Proveidor:" />
+        <ComboBox fx:id="proveidorComboBox" layoutX="130.0" layoutY="250.0" />
+        
+        <Label layoutX="14.0" layoutY="290.0" text="Data Alta:" />
+        <TextField fx:id="DataAltaTextField" layoutX="130.0" layoutY="290.0" />
+        
+        <Label layoutX="14.0" layoutY="330.0" text="Data Baixa:" />
+        <TextField fx:id="DataBaixaTextField" layoutX="130.0" layoutY="330.0" />
+        
+        <Label layoutX="14.0" layoutY="370.0" text="Preu Unitari:" />
+        <TextField fx:id="PreuUnitariTextField" layoutX="130.0" layoutY="370.0" />
+        
+        <Label layoutX="14.0" layoutY="410.0" text="Motiu:" />
+        <TextField fx:id="MotiuTextField" layoutX="130.0" layoutY="410.0" />
+        
+        <Button layoutX="50.0" layoutY="460.0" onAction="#handleguardar" text="Guardar" />
+        <Button layoutX="150.0" layoutY="460.0" onAction="#handleSortir" text="Cancelar" />
+    </children>
+</AnchorPane>

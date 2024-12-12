@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1720.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.AltaProveidorViewController">
+    <children>
+        <TextField fx:id="txtIdProveidor" layoutX="652.0" layoutY="78.0" prefHeight="100.0" prefWidth="560.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtNom" layoutX="652.0" layoutY="235.0" prefHeight="100.0" prefWidth="560.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtCif" layoutX="652.0" layoutY="357.0" prefHeight="100.0" prefWidth="560.0" promptText="ex: 45634567E">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <ComboBox fx:id="cmbEstat" layoutX="652.0" layoutY="490.0" prefHeight="100.0" prefWidth="560.0" style="-fx-font-size: 33;" />
+        <TextField fx:id="txtMotiuInactivitat" layoutX="652.0" layoutY="639.0" prefHeight="100.0" prefWidth="560.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtTelefon" layoutX="652.0" layoutY="782.0" prefHeight="100.0" prefWidth="560.0" promptText="657456876">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btnAlta" layoutX="1388.0" layoutY="900.0" mnemonicParsing="false" onAction="#altaProveidor" prefHeight="71.0" prefWidth="251.0" text="Alta">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <Button layoutX="76.0" layoutY="902.0" mnemonicParsing="false" onAction="#goToProveidor" prefHeight="71.0" prefWidth="251.0" text="Tornar">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <VBox layoutX="348.0" layoutY="75.0" prefHeight="808.0" prefWidth="308.0" spacing="40.0">
+            <children>
+                <Label prefHeight="100.0" prefWidth="230.0" text="ID Proveidor:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" text="Nom:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="76.0" text="CIF:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="99.0" text="Estat:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="322.0" text="Motiu Inactivitat:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="155.0" text="Telefon:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

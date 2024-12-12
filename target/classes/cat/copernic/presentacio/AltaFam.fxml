@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1720.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.AltaFamController">
+    <children>
+        <TextField fx:id="txtId" layoutX="265.0" layoutY="233.0" prefHeight="100.0" prefWidth="495.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtNom" layoutX="265.0" layoutY="375.0" prefHeight="100.0" prefWidth="495.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtDataA" layoutX="265.0" layoutY="655.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 2012-11-27">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <ComboBox fx:id="cmbProv" layoutX="1158.0" layoutY="375.0" prefHeight="100.0" prefWidth="495.0" style="-fx-font-size: 33;" />
+        <TextField fx:id="txtDescrip" layoutX="265.0" layoutY="516.0" prefHeight="100.0" prefWidth="495.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtDescom" layoutX="1152.0" layoutY="655.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 20.05">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btnAlta" layoutX="1324.0" layoutY="823.0" mnemonicParsing="false" onAction="#altaFamilia" prefHeight="71.0" prefWidth="251.0" text="Alta">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <Button layoutX="183.0" layoutY="826.0" mnemonicParsing="false" onAction="#goToFamilia" prefHeight="71.0" prefWidth="251.0" text="Tornar">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <TextField fx:id="txtDataB" layoutX="1158.0" layoutY="226.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 2012-11-27">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtObs" layoutX="1152.0" layoutY="521.0" prefHeight="100.0" prefWidth="495.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </TextField>
+        <Label alignment="CENTER" layoutX="687.0" layoutY="49.0" prefHeight="112.0" prefWidth="346.0" text="FAMILIA">
+            <font>
+                <Font size="66.0" />
+            </font>
+        </Label>
+        <VBox layoutX="51.0" layoutY="235.0" prefHeight="524.0" prefWidth="214.0" spacing="40.0">
+            <children>
+                <Label prefHeight="100.0" prefWidth="51.0" text="ID:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="89.0" text="Nom:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="203.0" text="Descripció:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="190.0" text="Data d'alta:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="903.0" layoutY="228.0" prefHeight="530.0" prefWidth="260.0" spacing="40.0">
+            <children>
+                <Label prefHeight="100.0" prefWidth="252.0" text="Data de baixa:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="173.0" text="Proveïdor:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="248.0" text="Observacions:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="279.0" text="Descompte:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

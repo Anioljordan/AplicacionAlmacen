@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="cat.copernic.presentacio.DetallReferenciaViewController"
+      spacing="10" alignment="CENTER" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);">
+    
+    <Label text="Detalls de la Referència" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-alignment: center;" />
+    
+    <Label text="ID Referència:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldIdReferencia" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Nom:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldNom" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Unitat de Mesura:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldUoM" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Quantitat de Producte:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldQuantitatProducte" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Família de Productes:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldFamiliaProductes" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Proveïdor:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldProveidor" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Data d'Alta:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldDataAlta" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Data de Baixa:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldDataBaixa" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Preu Unitari:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldPreuUnitari" editable="false" style="-fx-font-size: 18px;" />
+
+    <Label text="Motiu de Baixa:" style="-fx-font-size: 18px; -fx-text-alignment: center;" />
+    <TextField fx:id="textFieldMotiuBaixa" editable="false" style="-fx-font-size: 18px;" />
+
+    <Button fx:id="btnSortir" text="Sortir" onAction="#cerrarVentana" style="-fx-font-size: 18px; -fx-padding: 10;" />
+</VBox>

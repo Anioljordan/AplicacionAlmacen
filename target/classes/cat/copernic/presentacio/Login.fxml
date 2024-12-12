@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="970.0" prefWidth="1910.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.LoginController">
+    <children>
+        <VBox fx:id="loginVBox" layoutX="472.0" layoutY="273.0" prefHeight="582.0" prefWidth="958.0" spacing="50.0" styleClass="loginvbox">
+            <children>
+                <TextField fx:id="txtUsuari" prefHeight="86.0" prefWidth="822.0" promptText="Usuari" styleClass="textusuari">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="100.0" />
+                    </VBox.margin>
+                </TextField>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="txtContrasenyaVisible" managed="false" prefHeight="86.0" prefWidth="757.0" styleClass="textusuari" visible="false">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="txtContrasenya" prefHeight="86.0" prefWidth="757.0" promptText="Contrasenya">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </PasswordField>
+                        <!-- Sustituyendo CheckBox por ImageView -->
+                        <ImageView fx:id="eyeIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#togglePasswordVisibility" pickOnBounds="true">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin></ImageView>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="100.0" />
+                    </VBox.margin>
+                </HBox>
+
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                    <children>
+                        <Button onAction="#handleLogin" prefHeight="73.0" prefWidth="382.0" text="Iniciar Sessió">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </Button>
+                        <Button onAction="#goToSignUp" prefHeight="73.0" prefWidth="382.0" style="-fx-border-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);" text="Registra't">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                            <effect>
+                                <Shadow />
+                            </effect>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="70.0" left="45.0" top="50.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <Text layoutX="739.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="USER LOGIN" wrappingWidth="443.5">
+            <font>
+                <Font size="62.0" />
+            </font>
+        </Text>
+        <!-- Añadir un ImageView para mostrar la imagen del logo -->
+        <ImageView fx:id="imageLogo" fitHeight="279.0" fitWidth="445.0" layoutX="726.0" layoutY="80.0" />
+            <Button layoutX="41.0" layoutY="40.0" onAction="#close" prefHeight="86.0" prefWidth="364.0" style="-fx-border-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);" text="Tancar programa">
+                <font>
+                    <Font size="40.0" />
+                </font>
+                <effect>
+                    <Shadow />
+                </effect>
+            </Button>
+    </children>
+</AnchorPane>

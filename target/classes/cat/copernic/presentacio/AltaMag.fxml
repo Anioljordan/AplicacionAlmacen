@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1720.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.AltaMagController">
+   <children>
+      <VBox layoutX="33.0" layoutY="122.0" prefHeight="409.0" prefWidth="251.0" spacing="50.0">
+         <children>
+            <Label prefHeight="100.0" prefWidth="271.0" text="ID Entrada:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label prefHeight="100.0" prefWidth="273.0" text="Nom entrada:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label prefHeight="100.0" prefWidth="277.0" text="Data d'entrada:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="txtId" layoutX="284.0" layoutY="122.0" prefHeight="100.0" prefWidth="495.0">
+         <font>
+            <Font size="33.0" />
+         </font></TextField>
+      <TextField fx:id="txtNom" layoutX="284.0" layoutY="271.0" prefHeight="100.0" prefWidth="495.0">
+         <font>
+            <Font size="33.0" />
+         </font></TextField>
+      <TextField fx:id="txtDataE" layoutX="284.0" layoutY="431.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 2012-11-27">
+         <font>
+            <Font size="33.0" />
+         </font></TextField>
+      <ComboBox fx:id="cmbTipus" layoutX="622.0" layoutY="599.0" prefHeight="100.0" prefWidth="560.0" style="-fx-font-size: 33;" />
+      <TextField fx:id="txtMotiu" layoutX="1134.0" layoutY="271.0" prefHeight="100.0" prefWidth="495.0">
+         <font>
+            <Font size="33.0" />
+         </font></TextField>
+      <TextField fx:id="txtValor" layoutX="1134.0" layoutY="431.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 47.3">
+         <font>
+            <Font size="33.0" />
+         </font></TextField>
+      <Button fx:id="btnAlta" layoutX="1399.0" layoutY="860.0" mnemonicParsing="false" onAction="#altaEntrada" prefHeight="71.0" prefWidth="251.0" text="Alta">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Label layoutX="515.0" layoutY="599.0" prefHeight="100.0" prefWidth="99.0" text="Tipus:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="860.0" mnemonicParsing="false" onAction="#goToMagatzem" prefHeight="71.0" prefWidth="251.0" text="Tornar">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDataS" layoutX="1134.0" layoutY="122.0" prefHeight="100.0" prefWidth="495.0" promptText="ex: 2012-11-27">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="861.0" layoutY="123.0" prefHeight="409.0" prefWidth="273.0" spacing="50.0">
+         <children>
+            <Label prefHeight="100.0" prefWidth="310.0" text="Data de sortida:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label prefHeight="100.0" prefWidth="303.0" text="Motiu sortida:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label prefHeight="100.0" prefWidth="311.0" text="Valor total:">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

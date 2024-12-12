@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.MagatzemViewController">
+    <children>
+        <Pane prefHeight="200.0" prefWidth="1720.0">
+            <children>
+                <Label layoutX="771.0" layoutY="-6.0" prefHeight="212.0" prefWidth="412.0" styleClass="segundotitulo" text="Magatzem">
+                    <font>
+                        <Font size="71.0" />
+                    </font>
+                </Label>
+                <Button layoutX="68.0" layoutY="74.0" onAction="#goToPrincipal" prefHeight="71.0" prefWidth="312.0" text="Menú Principal">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane prefHeight="780.0" prefWidth="1720.0">
+            <children>
+
+                <!-- Taula amb scrollbar -->
+                <ScrollPane layoutX="197.0" layoutY="70.0" prefHeight="540.0" prefWidth="1530.0">
+                    <content>
+                        <TableView fx:id="taulaMagatzem" prefHeight="536.0" prefWidth="1525.0">
+                            <columns>
+                                <TableColumn fx:id="columnaID" prefWidth="100.0" text="ID" />
+                                <TableColumn fx:id="columnaNom" prefWidth="200.0" text="Nom" />
+                                <TableColumn fx:id="columnaDataEntrada" prefWidth="300.0" text="Data d'entrada" />
+                                <TableColumn fx:id="columnaDataSortida" prefWidth="300.0" text="Data de sortida" />
+                                <TableColumn fx:id="columnaMotiuSortida" prefWidth="300.0" text="Motiu sortida" />
+                                <TableColumn fx:id="columnaValorTotal" prefWidth="200.0" text="Valor total" />
+                                <TableColumn fx:id="columnaTipus" prefWidth="100.0" text="Tipus" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </ScrollPane>
+
+                <HBox alignment="TOP_CENTER" layoutX="4.0" layoutY="730.0" prefHeight="100.0" prefWidth="1920.0" spacing="30.0"> <!-- Increased spacing -->
+                    <children>
+                        <Button onAction="#buscarMagatzem" prefHeight="70.0" prefWidth="200.0" text="Buscar"> <!-- Increased size -->
+                            <font>
+                                <Font size="24.0" /> <!-- Adjusted font size -->
+                            </font>
+                        </Button>
+                        <Button fx:id="btnModificar" onAction="#modificarFila" prefHeight="70.0" prefWidth="200.0" text="Editar"> <!-- Increased size -->
+                            <font>
+                                <Font size="24.0" /> <!-- Adjusted font size -->
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAlta" onAction="#goToAltaMag" prefHeight="70.0" prefWidth="200.0" text="Alta"> <!-- Increased size -->
+                            <font>
+                                <Font size="24.0" /> <!-- Adjusted font size -->
+                            </font>
+                        </Button>
+                        <Button fx:id="btnBaixa" onAction="#eliminarFila" prefHeight="70.0" prefWidth="200.0" text="Eliminar"> <!-- Increased size -->
+                            <font>
+                                <Font size="24.0" /> <!-- Adjusted font size -->
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </children>
+</VBox>

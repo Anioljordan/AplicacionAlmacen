@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="970.0" prefWidth="1910.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.SignUpController">
+    <children>
+        <Text layoutX="689.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="USER SIGNUP" wrappingWidth="488.4700927734375">
+            <font>
+                <Font size="62.0" />
+            </font>
+        </Text>
+        <VBox layoutX="470.0" layoutY="269.0" prefHeight="682.0" prefWidth="958.0" spacing="40.0" >
+            <children>
+                <TextField fx:id="txtNouUsuari" prefHeight="86.0" prefWidth="368.0" promptText="Usuari">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" top="100.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="txtNovaContrasenya" prefHeight="86.0" prefWidth="368.0" promptText="Contrasenya">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                    </VBox.margin>
+                </PasswordField>
+
+                <!-- Campo per mostrar la nova contrasenya -->
+                <TextField fx:id="txtNovaContrasenyaVisible" managed="false" prefHeight="86.0" prefWidth="368.0" visible="false">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="txtConfirmaContrasenya" prefHeight="86.0" prefWidth="368.0" promptText="Confirmar Contrasenya">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                    </VBox.margin>
+                </PasswordField>
+
+                <!-- Campo per mostrar la contrasenya de confirmació -->
+                <TextField fx:id="txtConfirmaContrasenyaVisible" managed="false" visible="false">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                    </VBox.margin>
+                </TextField>
+
+                <!-- RadioButtons per seleccionar el tipus d'usuari -->
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+   <children>
+                       <RadioButton fx:id="radioButtonManager" style="-fx-font-size: 30px;" text="Manager" />
+                       <RadioButton fx:id="radioButtonVenedor" style="-fx-font-size: 30px;" text="Venedor" />
+      
+                      <!-- Imagen que permite mostrar/ocultar contraseñas -->
+                      <ImageView fx:id="imageMostrarPwd" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+                </HBox>
+                
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="365.0">
+                    <children>
+                        <Button onAction="#handleSignUp" text="Registra't">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </Button>
+
+                        <Button onAction="#goToLogin" text="Tornar">
+                            <font>
+                                <Font size="40.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <ImageView fx:id="imageLogo" fitHeight="279.0" fitWidth="445.0" layoutX="723.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

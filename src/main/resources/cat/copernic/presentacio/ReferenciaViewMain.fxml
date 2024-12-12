@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="970.0" prefWidth="1910.0" style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.MainReferenciaViewController"> <!-- Fondo en skyblue -->
+
+    <!-- Título grande y centrado en la parte superior -->
+    <top>
+        <VBox alignment="CENTER" spacing="40" style="-fx-padding: 20;">
+            <children>
+                <Label alignment="CENTER" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Gestió de Referències" />
+            </children>
+        </VBox>
+    </top>
+
+    <!-- Botón de menú centrado en la parte superior izquierda -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-padding: 10;">
+            <children>
+                <Button fx:id="botoMenu" onAction="#handleBotoMenu" prefHeight="71.0" prefWidth="285.0" text="Menú Principal">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Button>
+                <Label prefHeight="104.0" prefWidth="454.0" styleClass="segundotitulo" text="Referències">
+                    <font>
+                        <Font size="71.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="420.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="540.0" prefWidth="1530.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+            <content>
+                <TableView fx:id="taulaReferencia" prefHeight="536.0" prefWidth="1525.0" VBox.vgrow="ALWAYS"> <!-- Ample reduït a 250 -->
+                    <columns>
+                        <TableColumn fx:id="columnaID" prefWidth="173.0" text="idReferencia" />
+                        <TableColumn fx:id="columnaNom" prefWidth="146.0" text="nom" />
+                        <TableColumn fx:id="columnaUoM" prefWidth="160.0" text="UoM" />
+                        <TableColumn fx:id="columnaQuantitatProducte" prefWidth="140.0" text="quantitatProducte" />
+                        <TableColumn fx:id="columnaFamiliaProductes" prefWidth="160.0" text="familiaProductes" />
+                        <TableColumn fx:id="columnaProveidor" prefWidth="160.0" text="proveidor" />
+                        <TableColumn fx:id="columnaDataAlta" prefWidth="160.0" text="dataAlta" />
+                        <TableColumn fx:id="columnaDataBaixa" prefWidth="160.0" text="dataBaixa" />
+                        <TableColumn fx:id="columnaPreuUnitari" prefWidth="160.0" text="preuUnitari" />
+                        <TableColumn fx:id="columnaMotiuBaixa" prefWidth="160.0" text="motiuBaixa" />
+                    </columns>
+                </TableView>
+            </content>
+            <BorderPane.margin>
+                <Insets bottom="50.0" left="150.0" right="150.0" top="100.0" />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+
+    <!-- HBox para los botones en la parte inferior -->
+    <bottom>
+        <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+            <children>
+                <HBox alignment="CENTER" spacing="30.0">
+                    <children>
+                        <Button fx:id="botoId" onAction="#BuscaId" prefHeight="70.0" prefWidth="200.0" style="-fx-font-size: 33;" text="Buscar" />
+                        <Button fx:id="btnModificar" onAction="#handleBotoMod" prefHeight="70.0" prefWidth="200.0" style="-fx-font-size: 33;" text="Editar" />
+                        <Button fx:id="btnAlta" onAction="#handleBotoAlta" prefHeight="70.0" prefWidth="200.0" style="-fx-font-size: 33;" text="Alta" />
+                        <Button fx:id="btnBaixa" onAction="#handleBotoBaixa" prefHeight="70.0" prefWidth="200.0" style="-fx-font-size: 33;" text="Eliminar" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+
+</BorderPane>

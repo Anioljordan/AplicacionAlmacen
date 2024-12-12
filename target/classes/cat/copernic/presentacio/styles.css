@@ -1,0 +1,69 @@
+/* Estilo para el fondo de la pantalla principal */
+.root {
+    -fx-background-color: skyblue;
+
+}
+
+/* Estilo para el título principal "Menu Principal" */
+.label {
+    -fx-text-fill: #2f4f4f; /* Color del texto gris oscuro */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-underline: true; /* Subrayado */
+}
+
+
+/* Estilo para el botón de "Log Out" en la parte superior derecha */
+.button {
+    -fx-background-color: black; /* Fondo negro */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-background-radius: 5px; /* Fondo redondeado */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.0, 0, 0); /* Sombra */
+}
+
+/* Cambia el fondo del botón al pasar el ratón */
+.button:hover {
+    -fx-background-color: #4caf50; /* Fondo verde amigable al pasar el ratón */
+    -fx-text-fill: white; /* Mantener texto blanco */
+    -fx-scale-x: 1.3; /* Aumentar tamaño en el eje X */
+    -fx-scale-y: 1.3; /* Aumentar tamaño en el eje Y */
+}
+
+/* Estilo para los botones del menú (Magatzem, Famílies, Referències, Proveïdors) */
+.menu-button {  
+    -fx-background-color: black; /* Fondo negro */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-background-radius: 5px; /* Fondo redondeado */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.0, 0, 0); /* Sombra de botón */
+}
+
+/* Cambia el fondo del botón del menú al pasar el ratón */
+.menu-button:hover {
+    -fx-background-color: #4caf50; /* Fondo verde amigable al pasar el ratón */
+    -fx-text-fill: white; /* Texto blanco al pasar el ratón */
+    -fx-scale-x: 1.3; /* Aumentar tamaño en el eje X */
+    -fx-scale-y: 1.3; /* Aumentar tamaño en el eje Y */
+}
+.titulo{
+    -fx-font-size: 69px;                /* Tamaño de fuente */
+    -fx-font-weight: bold;               /* Negrita */
+    -fx-text-fill: #2E86C1;              /* Color del texto (puedes cambiarlo) */
+    -fx-font-family: "Arial";            /* Tipo de fuente */
+    -fx-padding: 10;                     /* Espaciado alrededor del texto */
+    -fx-background-color: transparent;   /* Fondo transparente */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 0, 2); /* Sombra */
+    -fx-alignment: center;               /* Centrado del texto */
+}
+
+.segundotitulo {
+    -fx-font-size: 48px;                  /* Tamaño de fuente moderado */
+    -fx-font-weight: bold;                 /* Negrita */
+    -fx-text-fill: #333333;                /* Color gris oscuro */
+    -fx-font-family: "Arial";              /* Tipo de fuente */
+    -fx-padding: 10;                       /* Espaciado alrededor del texto */
+    -fx-background-color: transparent;      /* Fondo transparente */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.0, 0, 2); /* Sombra sutil */
+}
+
+

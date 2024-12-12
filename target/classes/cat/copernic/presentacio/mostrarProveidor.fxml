@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="980.0" prefWidth="1720.0"  style="-fx-background-color: linear-gradient(to bottom right, skyblue, #FFDAB9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.copernic.presentacio.MostrarProveidorController">
+    <children>
+        
+        <Button layoutX="76.0" layoutY="902.0" onAction="#goToProveidor" prefHeight="71.0" prefWidth="251.0" text="Tornar">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <VBox layoutX="450.0" layoutY="62.0" prefHeight="864.0" prefWidth="312.0" >
+            <children>
+                <Label prefHeight="39.0" prefWidth="264.0" text="ID Proveidor:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+              
+                <Label prefHeight="50.0" prefWidth="420.0" text="Nom:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+              
+                <Label prefHeight="50.0" prefWidth="420.0" text="CIF:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+              
+                <Label prefHeight="50.0" prefWidth="420.0" text="Estat:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+              
+                <Label prefHeight="50.0" prefWidth="420.0" text="Motiu Inactivitat:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+              
+                <Label prefHeight="50.0" prefWidth="420.0" text="Telefon:">
+                    <font>
+                        <Font size="33.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="95.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="763.0" layoutY="55.0" prefHeight="838.0" prefWidth="603.0">
+            <children>
+                <TextField fx:id="lblIdProveidor" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="lblNom" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="lblCif" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="lblEstat" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="lblMotiuInactivitat" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="lblTelefon" editable="false" prefHeight="100.0" prefWidth="300.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
